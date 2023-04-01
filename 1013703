@@ -160,7 +160,7 @@ def method_crack():
     print('')
     option = input('Select method>: ')
     if option =='1':
-        methods.append('method1')
+        methods.append('methodA')
         main_crack().crack(id)
     elif option =='2':
         methods.append('methodB')
@@ -197,7 +197,7 @@ class main_crack():
             time.sleep(2)
             main_crack().crack(id)
             
-    def method1(self, sid, name, psw):
+    def methodA(self, sid, name, psw):
         try:
             global oks,cps,loop
             sys.stdout.write(f"\r {S}[sajee] {loop} | M1 OK/CP {len(oks)}/{len(cps)} | {S}{'{:.0%}'.format(loop/float(len(self.id)))}{S}")
